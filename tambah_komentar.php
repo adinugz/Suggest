@@ -22,7 +22,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
     $stmt->bind_param("ssis", $nama, $komentar, $parent_id,  $date);
     $stmt->execute();
     
- // redirect HTTP/1.1 404 Not Found ketika pengguna mencoba mengakses file data.php
+ // redirect HTTP/1.1 404 Not Found ketika pengguna mencoba mengakses file tambah_komentar.php
 } else {
     header("HTTP/1.1 404 Not Found");
 }
